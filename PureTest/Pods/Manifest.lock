@@ -1,0 +1,22 @@
+PODS:
+  - Pure (1.1.4):
+    - Pure/Core (= 1.1.4)
+  - Pure/Core (1.1.4)
+  - Swinject (2.8.1)
+
+DEPENDENCIES:
+  - Pure
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Pure
+    - Swinject
+
+SPEC CHECKSUMS:
+  Pure: 82d6f4438672a41d21ea6fadd126e1466db001c5
+  Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
+
+PODFILE CHECKSUM: b649f6a4002702de2577c1b1ed112f66d2799d65
+
+COCOAPODS: 1.11.2

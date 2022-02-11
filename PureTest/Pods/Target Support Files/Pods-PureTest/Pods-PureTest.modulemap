@@ -1,0 +1,6 @@
+framework module Pods_PureTest {
+  umbrella header "Pods-PureTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
