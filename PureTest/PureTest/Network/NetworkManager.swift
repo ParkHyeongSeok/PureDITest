@@ -14,10 +14,10 @@ final class NetworkManager: NetworkManagerType {
         self.urlSession = urlSession
     }
     
-    func request(with query: String, completion: @escaping (Result<[String], Error>) -> Void) {
+    func request(with query: String, completion: @escaping (Result<[Friend], Error>) -> Void) {
         completion(.success([
-            "형석",
-            "선아"
+            Friend(name: "형석", age: 35),
+            Friend(name: "선아", age: 34)
         ]))
     }
     

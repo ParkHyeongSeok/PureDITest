@@ -8,5 +8,5 @@
 import Foundation
 
 protocol NetworkManagerType {
-    func request(with query: String, completion: @escaping (Result<[String], Error>) -> Void)
+    func request(with query: String, completion: @escaping (Result<[Friend], Error>) -> Void)
 }
