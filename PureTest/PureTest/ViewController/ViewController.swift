@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Pure
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FactoryModule {
     
     private let friendsTableview: UITableView = {
        let tb = UITableView()
@@ -15,8 +16,14 @@ class ViewController: UIViewController {
         return tb
     }()
     
-    var viewModel: ViewModel!
-
+    struct Dependency {
+        let viewModel: ViewModel
+    }
+    
+    struct Payload {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -52,7 +59,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendTableViewCell.identifier, for: indexPath) as? FriendTableViewCell else { return UITableViewCell() }
-        let data = viewModel.friends[indexPath.row]
+        let data = viewModel.friends[indexPath.row].name
         cell.rendering(name: data)
         return cell
     }
