@@ -2,21 +2,44 @@ PODS:
   - Pure (1.1.4):
     - Pure/Core (= 1.1.4)
   - Pure/Core (1.1.4)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - Swinject (2.8.1)
+  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Pure
+  - ReactorKit
+  - RxCocoa
+  - RxSwift
   - Swinject
 
 SPEC REPOS:
   trunk:
     - Pure
+    - ReactorKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - Swinject
+    - WeakMapTable
 
 SPEC CHECKSUMS:
   Pure: 82d6f4438672a41d21ea6fadd126e1466db001c5
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: b649f6a4002702de2577c1b1ed112f66d2799d65
+PODFILE CHECKSUM: 920a0a5f3f38dcabfe9a8c70ea37036498d91af7
 
 COCOAPODS: 1.11.2

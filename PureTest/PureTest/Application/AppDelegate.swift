@@ -7,6 +7,11 @@
 
 import UIKit
 
+// CompositionRoot : 모든 디팬던시가 구현 - Pure
+// Asssembly: Swinject
+
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
